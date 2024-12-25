@@ -4,7 +4,7 @@
 echo "Seja bem vindo ao instalador automático do emulador de jogos J2me by Darley."
 
 # Diretório temporário para download
-TEMP_DIR="/tmp/freej2me"
+TEMP_DIR="/userdata/tmp/freej2me"
 DRL_FILE="$TEMP_DIR/freej2me.drl"
 DEST_DIR="/"
 
