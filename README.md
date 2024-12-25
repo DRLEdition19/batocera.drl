@@ -17,7 +17,7 @@ Chave Pix:
 3º- Ao abrir o gerenciador de arquivo, pressione a tecla de comando F4 para abrir o terminal
 <br>
 <br>
-4º- Agora digite <b><i>curl -L bit.ly/bat-drl | bash</i></b> , pressione a tecla Enter e aguarde finalizar.
+4º- Agora digite <b><i>curl -L bit.ly/bat-pro | bash</i></b> , pressione a tecla Enter e aguarde finalizar.
 <br>
 <br>
 5º- Agora e só voltar ao front-end do batocera, ir no sistema Ports e procurar pelo Batocera.pro.
