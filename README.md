@@ -1,12 +1,5 @@
 <b><i>Versão atualizada do batocera.pro by DRLEdition</i></b><br>
 <br>
-
-  Esta versão do Batocera.pro, possui apenas algumas alterações em seus scripts para que os apps possam ser baixados e instalados normalmente no seu Batocera, visando não remover a essencia do antigo repositório do batocera Pro, que até então se encontra arquivado pelo desenvolverdor do projeto original. Você poderá verficicar o repositório original aqui: https://github.com/uureel/batocera.pro
-
-<br>
-  Esta versão, comocitado anteriormente, conta com apenas alterações de alguns links e servidores presentes nos scripts.
-Também foi implementado a possibilidade de instalar o emulador de jogos em java J2me, que já vai com alguns jogos instalados, no entanto não são todos os jogos que são compatíveis. Sintase livre para criar um fork deste reposítório e melhorá-lo a seu modo.
-<br>
 <br>
 Para istalar esta nova versão do batocera pro, basta realizar o procedimento antigo:
 <br>
@@ -29,6 +22,13 @@ Para istalar esta nova versão do batocera pro, basta realizar o procedimento an
 <br>
 6º- Ao encontrar o Batocera.Pro, execute-o e seja feliz.
 <br>
+<br>
+<br>
+  Esta versão do Batocera.pro, possui apenas algumas alterações em seus scripts para que os apps possam ser baixados e instalados normalmente no seu Batocera, visando não remover a essencia do antigo repositório do batocera Pro, que até então se encontra arquivado pelo desenvolverdor do projeto original. Você poderá verficicar o repositório original aqui: https://github.com/uureel/batocera.pro
+
+<br>
+  Esta versão, comocitado anteriormente, conta com apenas alterações de alguns links e servidores presentes nos scripts.
+Também foi implementado a possibilidade de instalar o emulador de jogos em java J2me, que já vai com alguns jogos instalados, no entanto não são todos os jogos que são compatíveis. Sintase livre para criar um fork deste reposítório e melhorá-lo a seu modo.
 <br>
 <br>
 Caso queira, você poderá instalar o app de maneira direta indo até o repositório e olhe o .sh para o instalador do que você quer instalar, se houver alguma menção de https://Batocera.pro, então não funcionará, mas se não houver menção, então ainda funcionará.
