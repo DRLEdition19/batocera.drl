@@ -17,7 +17,7 @@ Para istalar esta nova versão do batocera pro, basta realizar o procedimento an
 <br>
 Chave Pix:
 <br>
-351cbaac-cca8-46c5-aba9-fa495e3d352f</i></b>
+https://nubank.com.br/cobrar/gbryg/676c7521-ac22-490d-88b8-3d39d7731d07</i></b>
 <br>
 <br>
 5º- Agora e só voltar ao front-end do batocera, ir no sistema Ports e procurar pelo Batocera.pro.
