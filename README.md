@@ -16,7 +16,10 @@ Para istalar esta nova versão do batocera pro, basta realizar o procedimento an
 4º- Agora e só voltar ao front-end do batocera, ir no sistema Ports e procurar pelo Batocera.pro.
 <br>
 <br>
-<b><i>5°- Me pague um café!Chave aleatória:
+<b><i>5°- Me pague um café! 😊
+<br>
+Chave Pix:
+<br>
 351cbaac-cca8-46c5-aba9-fa495e3d352f</i></b>
 <br>
 <br>
