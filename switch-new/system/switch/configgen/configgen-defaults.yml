@@ -1,0 +1,17 @@
+default:
+  emulator:
+  core:
+  options:
+    videomode:      default
+    ratio:          auto
+    video_threaded: false
+    smooth:         true
+    rewind:         false
+    bezel:          default
+    forceNoBezel:   false
+
+switch:
+  emulator: yuzu-early-access
+  core:     yuzu-early-access
+  options:
+    forceNoBezel: true
