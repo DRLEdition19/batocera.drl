@@ -13,14 +13,14 @@ Para istalar esta nova versão do batocera pro, basta realizar o procedimento an
 3º- Agora digite <b><i>curl -L bit.ly/bat-drl | bash</i></b> , pressione a tecla Enter e aguarde finalizar.
 <br>
 <br>
-4º- Agora e só voltar ao front-end do batocera, ir no sistema Ports e procurar pelo Batocera.pro.
-<br>
-<br>
-<b><i>5°- Me pague um café! 😊
+<b><i>4°- Me pague um café! 😊
 <br>
 Chave Pix:
 <br>
 351cbaac-cca8-46c5-aba9-fa495e3d352f</i></b>
+<br>
+<br>
+5º- Agora e só voltar ao front-end do batocera, ir no sistema Ports e procurar pelo Batocera.pro.
 <br>
 <br>
 6º- Ao encontrar o Batocera.Pro, execute-o e seja feliz.
