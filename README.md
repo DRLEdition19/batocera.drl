@@ -17,7 +17,7 @@ Para istalar esta nova versão do batocera pro, basta realizar o procedimento an
 2º- Ao abrir o gerenciador de arquivo, pressione a tecla de comando F4 para abrir o terminal
 <br>
 <br>
-3º- Agora digite <b><i>curl -L bit.ly/bat-pro | bash</i></b> , pressione a tecla Enter e aguarde finalizar.
+3º- Agora digite <b><i>curl -L bit.ly/bat-drl | bash</i></b> , pressione a tecla Enter e aguarde finalizar.
 <br>
 <br>
 4º- Agora e só voltar ao front-end do batocera, ir no sistema Ports e procurar pelo Batocera.pro.
