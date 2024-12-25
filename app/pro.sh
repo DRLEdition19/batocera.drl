@@ -6,7 +6,7 @@ clear
 
 # Function to display animated title with colors
 animate_title() {
-    local text="BATOCERA PRO APP INSTALLER"
+    local text="BATOCERA PRO APP INSTALLER | UPDATED BY DRLEDITION"
     local delay=0.03
     local length=${#text}
 
