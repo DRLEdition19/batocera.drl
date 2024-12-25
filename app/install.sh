@@ -11,7 +11,7 @@ fi
 
 # Function to display animated title
 animate_title() {
-    local text="BATOCERA PRO APP INSTALLER"
+    local text="BATOCERA PRO APP INSTALLER | UPDATED BY DRLEDITION"
     local delay=0.1
     local length=${#text}
 
@@ -25,7 +25,7 @@ animate_title() {
 # Function to display controls
 display_controls() {
     echo 
-    echo "  This Will install Batocera Pro app Installer to Ports"
+    echo "  This Will install Batocera Pro app Installer to Ports | By DRLEdition"
     echo    
     sleep 5  # Delay for 5 seconds
 }
