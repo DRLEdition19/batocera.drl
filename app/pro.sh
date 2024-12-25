@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-dialog --msgbox "Note: Batocera.Pro is deprecated and going archived. Support is not longer available." 20 70
+dialog --msgbox "Note: Batocera.Pro is being updated, and from now on it is working normally. All scripts were updated by DRLEDITION." 20 70
 clear
 
 # Function to display animated title with colors
