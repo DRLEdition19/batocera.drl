@@ -34,11 +34,11 @@ Chave Pix:
 Também foi implementado a possibilidade de instalar o emulador de jogos em java J2me, que já vai com alguns jogos instalados, no entanto não são todos os jogos que são compatíveis. Sintase livre para criar um fork deste reposítório e melhorá-lo a seu modo.
 <br>
 <br>
-Caso queira, você poderá instalar o app de maneira direta indo até o repositório e olhe o .sh para o instalador do que você quer instalar, se houver alguma menção de https://Batocera.pro, então não funcionará, mas se não houver menção, então ainda funcionará.
-Usaremos como exemplo o script de instalação clonehero que puxa tudo diretamente do GitHub, então você pode instalá-lo com o seguinte comando;
+Caso queira, você poderá instalar o app de maneira direta indo até o repositório e olhe o .sh para o instalador do que você quer instalar, se houver alguma menção de Batocera.pro, então não funcionará, mas se não houver menção, então ainda funcionará.
+Usaremos como exemplo o script de instalação YoutubeTV que puxa tudo diretamente do GitHub, então você pode instalá-lo com o seguinte comando;
 <br>
 <br>
-curl -L https://github.com/uureel/batocera.pro/raw/main/clonehero/clonehero.sh | bash
+curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/youtubetv/yttv.sh | bash
 <br>
 <br>
 <br>
