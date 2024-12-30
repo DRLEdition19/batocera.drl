@@ -1,7 +1,7 @@
 <b><i>Versão atualizada do batocera.pro by DRLEdition</i></b><br>
 <br>
 <br>
-Para istalar esta nova versão do batocera pro, basta realizar o procedimento antigo:
+Para instalar esta nova versão do batocera pro, basta realizar o procedimento antigo, porém com este novo comando  <b><i>curl -L bit.ly/bat-drl | bash</i></b> , deste modo siga o passo a passo abaixo:
 <br>
 <br>
 <b><i>1°- Me pague um café! 😊
