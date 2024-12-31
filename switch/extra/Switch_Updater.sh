@@ -3,7 +3,7 @@
 #                SWITCH EMULATORS UPDATER FOR BATOCERA               #
 #               ----------------------------------------             #
 #                    > https://discord.gg/hH5AfThG                   #
-#                > github.com/ordovice/batocera-switch               #
+#        > github.com/DRLEdition19/batocera-switch-ordovice          #
 ######################################################################
 #   EMULATORS    /                                                   #
 #===============/                                                    #
@@ -53,7 +53,7 @@ THEME_COLOR_RYUJINXAVALONIA=BLUE
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#                > github.com/ordovice/batocera-switch               #
+#        > github.com/DRLEdition19/batocera-switch-ordovice          #
 #                    > https://discord.gg/hH5AfThG                   #
 ######################################################################
 ######################################################################
@@ -462,8 +462,8 @@ link_ryujinxavalonia="$8"
 #link_ryujinxavalonia=https://github.com/DRLEdition19/batocera.drl/raw/main/switch/extra/test-ava-ryujinx-1.1.382-linux_x64.tar.gz
 # ---------------------------------------------------------------------------------- 
 # TEMPORARILY FREEZING UPDATES FOR YUZU: 
-#link_yuzu=https://archive.org/download/yuzu-windows-msvc-20240304-537296095_202403/yuzu-mainline-20240304-537296095.AppImage
-#link_yuzuea=https://github.com/DRLEdition19/batocera.drl/raw/main/switch/extra/Linux-Yuzu-EA-3180.AppImage
+#link_yuzu=https://github.com/DRLEdition19/AppStar/releases/download/AppStar/yuzu1734.AppImage
+#link_yuzuea=https://github.com/DRLEdition19/AppStar/releases/download/AppStar/yuzuea4176.AppImage
 # ----------------------------------------------------------------------------------
 # PATHS: 
 path_yuzu=/userdata/system/switch/yuzu.AppImage
@@ -610,7 +610,7 @@ echo -e "${T}$link_ryujinx" | sed 's,https://,> ,g'
 # --------------------------------------------------------
 # --------------------------------------------------------
 # \\ get dependencies for handling ryujinx
-link_tar=https://github.com/ordovice/batocera-switch/blob/main/system/switch/extra/batocera-switch-tar
+link_tar=https://github.com/DRLEdition19/batocera-switch-ordovice/blob/main/system/switch/extra/batocera-switch-tar
 if [[ -e "$extra/batocera-switch-tar" ]]; then 
 chmod a+x "$extra/batocera-switch-tar"
 else 
@@ -684,7 +684,7 @@ echo -e "${T}$link_ryujinxldn" | sed 's,https://,> ,g'
 # --------------------------------------------------------
 # --------------------------------------------------------
 # \\ get dependencies for handling ryujinxavalonia
-link_tar=https://github.com/ordovice/batocera-switch/blob/main/system/switch/extra/batocera-switch-tar
+link_tar=https://github.com/DRLEdition19/batocera-switch-ordovice/blob/main/system/switch/extra/batocera-switch-tar
 if [[ -e "$extra/batocera-switch-tar" ]]; then 
    chmod a+x "$extra/batocera-switch-tar"
 else 
@@ -760,7 +760,7 @@ echo -e "${T}$link_ryujinxavalonia" | sed 's,https://,> ,g'
 # --------------------------------------------------------
 # --------------------------------------------------------
 # \\ get dependencies for handling ryujinxavalonia
-link_tar=https://github.com/ordovice/batocera-switch/blob/main/system/switch/extra/batocera-switch-tar
+link_tar=https://github.com/DRLEdition19/batocera-switch-ordovice/blob/main/system/switch/extra/batocera-switch-tar
 if [[ -e "$extra/batocera-switch-tar" ]]; then 
    chmod a+x "$extra/batocera-switch-tar"
 else 
@@ -852,24 +852,19 @@ resolvelinks()
 links=/userdata/system/switch/extra/links
 rm -rf $links 2>/dev/null
 # YUZU:
-release_yuzu=$(curl -s https://github.com/yuzu-emu/yuzu-mainline/ | grep "yuzu-emu/yuzu-mainline/releases/tag/" | sed 's/^.*href=/href=/g' | cut -d "/" -f 6 | cut -d \" -f 1)
-date_yuzu=$(curl -s https://github.com/yuzu-emu/yuzu-mainline/releases/tag/$release_yuzu | grep "datetime=" | sed 's/^.*datetime/datetime/g' | cut -d \" -f 2 | cut -c 1-10 | sed 's/-//g')
-subrelease_yuzu=$(curl -s https://github.com/yuzu-emu/yuzu-mainline/releases/tag/$release_yuzu | grep data-hovercard-url | grep commit-link | head -n 1 | cut -d "=" -f 4 | cut -d "/" -f 7 | cut -c 1-9)
-link_yuzu=https://github.com/yuzu-emu/yuzu-mainline/releases/download/$release_yuzu/yuzu-mainline-$date_yuzu-$subrelease_yuzu.AppImage
+link_yuzu=https://github.com/DRLEdition19/AppStar/releases/download/AppStar/yuzu1734.AppImage
 # -------------------------------------------------------------------
 # YUZUEA: 
-release_yuzuea=$(curl -s https://github.com/pineappleEA/pineapple-src | grep /releases/ | cut -d "=" -f 5 | cut -d / -f 6 | cut -d '"' -f 1)
-link_yuzuea=https://github.com/pineappleEA/pineapple-src/releases/download/$release_yuzuea/Linux-Yuzu-$release_yuzuea.AppImage
+link_yuzuea=https://github.com/DRLEdition19/AppStar/releases/download/AppStar/yuzuea4176.AppImage
 # -------------------------------------------------------------------
 # RYUJINX:
-release_ryujinx=$(curl -s https://github.com/Ryujinx/release-channel-master | grep "/release-channel-master/releases/tag/" | sed 's,^.*/release-channel-master/releases/tag/,,g' | cut -d \" -f1)
-link_ryujinx=https://github.com/Ryujinx/release-channel-master/releases/download/$release_ryujinx/ryujinx-$release_ryujinx-linux_x64.tar.gz
+link_ryujinx=https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/switch/extra/ryujinx-1.1.382-linux_x64.tar.gz
 # -------------------------------------------------------------------
 # RYUJINXLDN:
-link_ryujinxldn=https://github.com/DRLEdition19/batocera.drl/raw/main/switch/extra/ava-ryujinx-1.1.0-ldn3.0.1-linux_x64.tar.gz
+link_ryujinxldn=https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/switch/extra/ryujinx-1.1.0-ldn3.1.3-linux_x64.tar.gz
 ## -------------------------------------------------------------------
 # RYUJINXAVALONIA:
-link_ryujinxavalonia=https://github.com/Ryujinx/release-channel-master/releases/download/$release_ryujinx/test-ava-ryujinx-$release_ryujinx-linux_x64.tar.gz
+link_ryujinxavalonia=https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/switch/extra/test-ava-ryujinx-1.1.382-linux_x64.tar.gz
 #
 echo "link_yuzu@$link_yuzu" >> $links
 echo "link_yuzuea@$link_yuzuea" >> $links
@@ -1106,14 +1101,14 @@ rm /userdata/roms/ports/updateryujinx.sh 2>/dev/null
 rm /userdata/roms/ports/updateryujinxavalonia.sh 2>/dev/null
 # --------------------------------------------------------------------
 # AUTOMATICALLY PULL THE LATEST EMULATORS FEATURES UPDATES / ALSO UPDATE THESE FILES: 
-url_switchkeys=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/configs/evmapy/switch.keys
-url_es_features_switch=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/configs/emulationstation/es_features_switch.cfg
-url_es_systems_switch=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/configs/emulationstation/es_systems_switch.cfg
-url_switchlauncher=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/switch/configgen/switchlauncher.py
-url_GeneratorImporter=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/switch/configgen/GeneratorImporter.py
-url_ryujinxMainlineGenerator=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/switch/configgen/generators/ryujinx/ryujinxMainlineGenerator.py
-url_yuzuMainlineGenerator=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/switch/configgen/generators/yuzu/yuzuMainlineGenerator.py
-url_sshupdater=https://raw.githubusercontent.com/ordovice/batocera-switch/main/system/switch/extra/batocera-switch-sshupdater.sh
+url_switchkeys=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/configs/evmapy/switch.keys
+url_es_features_switch=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/configs/emulationstation/es_features_switch.cfg
+url_es_systems_switch=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/configs/emulationstation/es_systems_switch.cfg
+url_switchlauncher=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/switch/configgen/switchlauncher.py
+url_GeneratorImporter=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/switch/configgen/GeneratorImporter.py
+url_ryujinxMainlineGenerator=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/switch/configgen/generators/ryujinx/ryujinxMainlineGenerator.py
+url_yuzuMainlineGenerator=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/switch/configgen/generators/yuzu/yuzuMainlineGenerator.py
+url_sshupdater=https://raw.githubusercontent.com/DRLEdition19/batocera-switch-ordovice/main/system/switch/extra/batocera-switch-sshupdater.sh
 wget -q -O "/userdata/system/configs/evmapy/switch.keys" "$url_switchkeys"
 wget -q -O "/userdata/system/configs/emulationstation/es_features_switch.cfg" "$url_es_features_switch"
 wget -q -O "/userdata/system/configs/emulationstation/es_systems_switch.cfg" "$url_es_systems_switch"
