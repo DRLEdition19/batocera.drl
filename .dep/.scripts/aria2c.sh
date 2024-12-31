@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL of the file to download
-url="https://github.com/DRLEdition19/batocera.drl/raw/main/.dep/aria2c"
+url="https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/.dep/aria2c"
 # Target file name
 filename="aria2c"
 
