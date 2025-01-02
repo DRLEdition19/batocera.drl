@@ -5,7 +5,7 @@ echo "Seja bem vindo ao instalador automático do emulador de jogos J2me by Darl
 
 # Diretório temporário para download
 TEMP_DIR="/userdata/tmp/winemanager"
-DRL_FILE="$TEMP_DIR/winemanager.drl"
+DRL_FILE="$TEMP_DIR/winemanager.zip"
 DEST_DIR="/userdata/"
 
 # Cria o diretório temporário
@@ -14,7 +14,7 @@ mkdir -p $TEMP_DIR
 
 # Faz o download do arquivo drl 
 echo "Fazendo download do arquivo winemanager.drl..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/batocera.drl/blob/main/winemanager/extra/winemanager.drl"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/batocera.drl/raw/8e050a82b85a5037b8316b3ddb882be6bc35cfd7/winemanager/extra/winemanager.zip"
 
 # Extrai o arquivo drl com barra de progresso e altera permissões de cada arquivo extraído
 echo "Extraindo o arquivo drl e definindo permissões para cada arquivo..."
@@ -34,6 +34,6 @@ rm -rf $TEMP_DIR
 
 # Exclui o arquivo winemanager.drl do diretório raiz
 echo "Excluindo o arquivo winemanager.drl do diretório raiz..."
-rm -f /userdata/winemanager.drl
+rm -f /userdata/winemanager.zip
 
 echo "Instalação concluída com sucesso."
