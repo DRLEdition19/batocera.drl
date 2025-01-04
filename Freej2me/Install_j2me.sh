@@ -43,7 +43,7 @@ create_symlink() {
 }
 
 create_symlink "/userdata/system/configs/bat-drl/AntiMicroX" "/opt/AntiMicroX"
-create_symlink "/media/SHARE_1/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/bin/antimicrox"
+create_symlink "/userdata/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/bin/antimicrox"
 create_symlink "/userdata/system/configs/bat-drl/Freej2me" "/opt/Freej2me"
 create_symlink "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
 
