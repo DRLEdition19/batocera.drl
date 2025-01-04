@@ -47,6 +47,11 @@ create_symlink "/media/SHARE_1/system/configs/bat-drl/AntiMicroX/antimicrox" "/u
 create_symlink "/userdata/system/configs/bat-drl/Freej2me" "/opt/Freej2me"
 create_symlink "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
 
+# Define permissões para arquivos específicos
+echo "Definindo permissões para arquivos específicos..."
+chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me.sh
+chmod 777 /media/SHARE/system/configs/bat-drl/python2.7/site-packages/configgen/emulatorlauncher.sh
+
 # Exclui o arquivo freej2me.zip do diretório raiz
 echo "Excluindo o arquivo freej2me.zip do diretório raiz..."
 rm -rf $TEMP_DIR/freej2me.zip
