@@ -46,6 +46,33 @@ curl -L "https://raw.githubusercontent.com/DRLEdition19/batocera.drl/refs/heads/
 echo "Excluindo o arquivo freej2me.drl do diretório raiz..."
 rm -f $TEMP_DIR/freej2me.zip
 
+# Função para criar link simbólico
+criar_link() {
+    origem="$1"
+    destino="$2"
+
+    # Verifica se o arquivo ou pasta de origem existe
+    if [ ! -e "$origem" ]; then
+        echo "ERRO: Origem '$origem' não encontrada."
+        return 1
+    fi
+
+    # Verifica se o destino já existe e substitui automaticamente
+    if [ -e "$destino" ] || [ -L "$destino" ]; then
+        echo "Aviso: '$destino' já existe. Substituindo..."
+        rm -rf "$destino"
+    fi
+
+    # Cria o link simbólico
+    ln -s "$origem" "$destino" && echo "Link criado: $destino -> $origem"
+}
+
+# Criando os links simbólicos conforme as instruções
+criar_link "/userdata/system/configs/bat-drl/AntiMicroX" "/opt/AntiMicroX"
+criar_link "/media/SHARE_1/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/bin/antimicrox"
+criar_link "/userdata/system/configs/bat-drl/Freej2me" "/opt/Freej2me"
+criar_link "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
+
 # Salva as alterações
 echo "Salvando alterações..."
 batocera-save-overlay 300
