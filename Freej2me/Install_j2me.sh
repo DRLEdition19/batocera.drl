@@ -64,6 +64,7 @@ curl -L "https://raw.githubusercontent.com/DRLEdition19/batocera.drl/refs/heads/
 # Exclui o arquivo freej2me.drl do diretório raiz
 echo "Excluindo o arquivo freej2me.drl do diretório raiz..."
 rm -f $TEMP_DIR/freej2me.zip
+rm -f /freej2me.zip
 
 # Salva as alterações
 echo "Salvando alterações..."
