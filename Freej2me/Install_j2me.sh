@@ -47,6 +47,11 @@ create_symlink "/media/SHARE_1/system/configs/bat-drl/AntiMicroX/antimicrox" "/u
 create_symlink "/userdata/system/configs/bat-drl/Freej2me" "/opt/Freej2me"
 create_symlink "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
 
+# Exclui o arquivo freej2me.zip do diretório raiz
+echo "Excluindo o arquivo freej2me.zip do diretório raiz..."
+rm -f $TEMP_DIR/freej2me.zip
+rm -f /freej2me.zip
+
 # Limpa o diretório temporário
 echo "Limpando diretório temporário..."
 rm -rf $TEMP_DIR
@@ -60,11 +65,6 @@ fi
 # Executa o script java.sh se o diretório /userdata/system/pro/java não existir
 echo "Executando o script java.sh..."
 curl -L "https://raw.githubusercontent.com/DRLEdition19/batocera.drl/refs/heads/main/java/java.sh" | bash
-
-# Exclui o arquivo freej2me.drl do diretório raiz
-echo "Excluindo o arquivo freej2me.drl do diretório raiz..."
-rm -f $TEMP_DIR/freej2me.zip
-rm -f /freej2me.zip
 
 # Salva as alterações
 echo "Salvando alterações..."
