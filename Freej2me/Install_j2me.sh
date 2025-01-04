@@ -51,6 +51,8 @@ create_symlink "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
 echo "Definindo permissões para arquivos específicos..."
 chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me.sh
 chmod 777 /media/SHARE/system/configs/bat-drl/python2.7/site-packages/configgen/emulatorlauncher.sh
+chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox
+chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox.sh
 
 # Exclui o arquivo freej2me.zip do diretório raiz
 echo "Excluindo o arquivo freej2me.zip do diretório raiz..."
