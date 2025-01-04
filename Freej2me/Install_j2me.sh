@@ -28,6 +28,25 @@ done
 echo "Copiando arquivos extraídos para o diretório raiz..."
 cp -r $TEMP_DIR/* $DEST_DIR
 
+# Cria links simbólicos
+echo "Criando links simbólicos..."
+
+# Função para criar link simbólico e substituir se já existir
+create_symlink() {
+    local target=$1
+    local link=$2
+    if [ -e "$link" ]; then
+        echo "Substituindo link simbólico existente: $link"
+        rm -f "$link"
+    fi
+    ln -s "$target" "$link"
+}
+
+create_symlink "/userdata/system/configs/bat-drl/AntiMicroX" "/opt/AntiMicroX"
+create_symlink "/media/SHARE_1/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/bin/antimicrox"
+create_symlink "/userdata/system/configs/bat-drl/Freej2me" "/opt/Freej2me"
+create_symlink "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
+
 # Limpa o diretório temporário
 echo "Limpando diretório temporário..."
 rm -rf $TEMP_DIR
