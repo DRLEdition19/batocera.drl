@@ -5,7 +5,7 @@ echo "Seja bem vindo ao instalador automático do emulador de jogos J2me by Darl
 
 # Diretório temporário para download
 TEMP_DIR="/userdata/tmp/freej2me"
-DRL_FILE="$TEMP_DIR/freej2me.drl"
+DRL_FILE="$TEMP_DIR/freej2me.zip"
 DEST_DIR="/"
 
 # Cria o diretório temporário
@@ -14,7 +14,7 @@ mkdir -p $TEMP_DIR
 
 # Faz o download do arquivo drl 
 echo "Fazendo download do arquivo freej2me.drl..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/batocera.drl/blob/main/Freej2me/extra/freej2me.drl"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/batocera.drl/releases/download/Batocera_Appimages/freej2me.zip"
 
 # Extrai o arquivo drl com barra de progresso e altera permissões de cada arquivo extraído
 echo "Extraindo o arquivo drl e definindo permissões para cada arquivo..."
@@ -44,7 +44,7 @@ curl -L "https://raw.githubusercontent.com/DRLEdition19/batocera.drl/refs/heads/
 
 # Exclui o arquivo freej2me.drl do diretório raiz
 echo "Excluindo o arquivo freej2me.drl do diretório raiz..."
-rm -f /freej2me.drl
+rm -f /freej2me.zip
 
 # Salva as alterações
 echo "Salvando alterações..."
