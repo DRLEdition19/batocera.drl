@@ -73,6 +73,8 @@ criar_link "/media/SHARE_1/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/b
 criar_link "/userdata/system/configs/bat-drl/Freej2me" "/opt/Freej2me"
 criar_link "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
 
+echo "Processo concluído."
+
 # Salva as alterações
 echo "Salvando alterações..."
 batocera-save-overlay 300
