@@ -49,8 +49,8 @@ create_symlink "/userdata/system/configs/bat-drl/python2.7" "/usr/lib/python2.7"
 
 # Exclui o arquivo freej2me.zip do diretório raiz
 echo "Excluindo o arquivo freej2me.zip do diretório raiz..."
-rm -f $TEMP_DIR/freej2me.zip
-rm -f /freej2me.zip
+rm -rf $TEMP_DIR/freej2me.zip
+rm -rf /freej2me.zip
 
 # Limpa o diretório temporário
 echo "Limpando diretório temporário..."
