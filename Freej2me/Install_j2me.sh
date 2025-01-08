@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Mensagem de boas-vindas
-echo "Seja bem vindo ao instalador automático do emulador de jogos J2me by Darley."
+echo "Seja bem vindo ao instalador automático do emulador de jogos J2me by DRL Edition."
 
 # Diretório temporário para download
 TEMP_DIR="/userdata/tmp/freej2me"
