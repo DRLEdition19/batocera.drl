@@ -116,6 +116,7 @@ apps=(
     ["HULU"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/hulu/hulu.sh | bash"
     ["ITCH"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/itch/itch.sh | bash"
     ["JAVA-RUNTIME"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/java/java.sh | bash"
+    ["JAVA-RUNTIME-JDK19"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/java/java-jdk19.sh | bash"
     ["JELLYFIN/DOCKER"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/main/docker/jellyfin.sh | bash"
     ["KDENLIVE"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/kdenlive/kdenlive.sh | bash"
     ["KITTY"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/kitty/kitty.sh | bash"
