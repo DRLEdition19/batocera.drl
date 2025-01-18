@@ -13,8 +13,8 @@ echo ""
 
 # Define the directory and the URL for the file
 directory="$HOME/batocera-containers"
-url="https://batocera.pro/app/batocera-containers"
-filename="batocera-containers" # Explicitly set the filename
+url="https://github.com/DRLEdition19/batocera-containers2/tree/main/"
+filename="containers" # Explicitly set the filename
 
 # Create the directory if it doesn't exist
 mkdir -p "$directory"
