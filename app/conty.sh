@@ -2,7 +2,7 @@
 
 # Variables
 CONTY_DIR="/userdata/system/pro/app/bin"
-CONTY_URL="https://github.com/Kron4ek/Conty/releases/latest/download/conty.sh"
+CONTY_URL="https://github.com/DRLEdition19/batocera.drl/releases/download/Batocera_Appimages/conty.sh"
 CONTY_BIN="/usr/bin/conty"
 
 # Create directory if it doesn't exist
