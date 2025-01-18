@@ -202,4 +202,4 @@ dialog --title "Container Apps Available via EmulationStation" --msgbox "$(print
 clear
 
 
-curl -Ls steam.batocera.pro | bash
+curl -Ls ttps://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/steam/steam.sh | bash
