@@ -70,6 +70,7 @@ declare -A apps
 apps=(
     # ... (populate with your apps as shown before)
     ["ARCH-CONTAINER"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/steam/install_new.sh | bash"
+    ["ARCH-Config"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/steam/steam.sh | bash"
     ["7ZIP"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/7zip/7zip.sh | bash"
     ["86BOX"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/86box/86box.sh | bash"
     ["ALTUS"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/altus/altus.sh | bash"
