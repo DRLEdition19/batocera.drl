@@ -82,7 +82,7 @@ display_controls
 # Define variables
 BASE_DIR="/userdata/system/pro/steam"
 HOME_DIR="$BASE_DIR/home"
-DOWNLOAD_URL="batocera.pro/app/conty.sh"
+DOWNLOAD_URL="https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/app/conty.sh"
 DOWNLOAD_FILE="$BASE_DIR/conty.sh"
 ROMS_DIR="/userdata/roms/ports"
 
@@ -111,7 +111,7 @@ mkdir -p /userdata/roms/steam2
 # Step 3: Download conty.sh with download percentage indicator
 rm /userdata/system/pro/steam/prepare.sh 2>/dev/null
 rm /userdata/system/pro/steam/conty.s* 2>/dev/null
-curl -L aria2c.batocera.pro | bash && ./aria2c -x 5 -d /userdata/system/pro/steam http://batocera.pro/app/conty.sh && rm aria2c
+curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/.dep/.scripts/aria2c.sh | bash && ./aria2c -x 5 -d /userdata/system/pro/steam https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/app/conty.sh && rm aria2c
 chmod 777 /userdata/system/pro/steam/conty.sh 2>/dev/null
 
 ###############
