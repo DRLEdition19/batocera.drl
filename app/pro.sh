@@ -99,6 +99,7 @@ apps=(
     ["EMUDECK/CONTAINER"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/emudeck/download.sh | bash"
     ["EMBY/DOCKER"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/main/docker/emby.sh | bash"
     ["FREEJ2ME"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/Freej2me/Install_j2me.sh | bash"
+    ["FREEJ2ME-New"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/Freej2me2/Install_j2me.sh | bash"
     ["FERDIUM"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/ferdium/ferdium.sh | bash"
     ["FILEZILLA"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/filezilla/filezilla.sh | bash"
     ["FIREFOX"]="curl -L https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/firefox/ff.sh | bash"
