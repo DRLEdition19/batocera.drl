@@ -63,6 +63,10 @@ rm -rf /freej2me.zip
 echo "Limpando diretório temporário..."
 rm -rf $TEMP_DIR
 
+# Salva as alterações
+echo "Salvando alterações..."
+batocera-save-overlay 300
+
 # Verifica se o diretório /userdata/system/pro/java existe
 if [ -d "/userdata/system/pro/java" ]; then
     echo "O diretório /userdata/system/pro/java já existe. Finalizando o script."
@@ -75,6 +79,6 @@ curl -L "https://raw.githubusercontent.com/DRLEdition19/batocera.drl/refs/heads/
 
 # Salva as alterações
 echo "Salvando alterações..."
-batocera-save-overlay 300
+batocera-save-overlay
 
 echo "Instalação concluída com sucesso."
