@@ -53,10 +53,16 @@ create_symlink "/userdata/system/configs/bat-drl/Freej2me/freej2me-sdl.jar" "/us
 FILE="/usr/share/batocera/configgen/configgen-defaults.yml"
 
 # Adicione o conteúdo desejado ao arquivo
-echo -e "\nj2me:\n  emulator: libretro\n  core:     freej2me" >> $FILE
+#"echo -e "\nj2me:\n  emulator: libretro\n  core:     freej2me" >> $FILE"
 
-# Defina as permissões necessárias para o arquivo
-chmod 644 $FILE
+# Verifique se as informações já estão no arquivo
+if ! grep -q "j2me:" $FILE; then
+    # Adicione o conteúdo desejado ao arquivo
+    echo -e "\nj2me:\n  emulator: libretro\n  core:     freej2me" >> $FILE
+    echo "Informações adicionadas ao arquivo."
+else
+    echo "As informações já existem no arquivo. Nenhuma alteração foi feita."
+fi
 
 # Define permissões para arquivos específicos
 echo "Definindo permissões para arquivos específicos..."
@@ -64,6 +70,10 @@ chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me.sh
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox.sh
 chmod 777 $FILE
+chmod 777 /userdata/roms/j2me/Update_j2me.sh
+chmod 777 /userdata/roms/ports/Update_j2me.sh
+chmod 777 /usr
+chmod 777 /usr/bin
 
 # Exclui o arquivo freej2me.zip do diretório raiz
 echo "Excluindo o arquivo freej2me.zip do diretório raiz..."
@@ -88,8 +98,10 @@ fi
 echo "Executando o script java.sh..."
 curl -L "https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/java/java-jdk19.sh" | bash
 
+
 # Salva as alterações
 echo "Salvando alterações..."
+chmod 777 /usr
 batocera-save-overlay
 
 echo "Instalação concluída com sucesso."
