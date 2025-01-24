@@ -67,6 +67,7 @@ fi
 # Define permissões para arquivos específicos
 echo "Definindo permissões para arquivos específicos..."
 chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me.sh
+chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me2.sh
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox.sh
 chmod 777 $FILE
