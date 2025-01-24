@@ -70,10 +70,10 @@ chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me.sh
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox.sh
 chmod 777 $FILE
-chmod 777 /userdata/roms/j2me/-Update_j2me.sh
 chmod 777 /userdata/roms/ports/-Update_j2me.sh
 chmod 777 /usr
 chmod 777 /usr/bin
+chmod 777 /usr/lib
 
 # Exclui o arquivo freej2me.zip do diretório raiz
 echo "Excluindo o arquivo freej2me.zip do diretório raiz..."
@@ -102,6 +102,8 @@ curl -L "https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/java/j
 # Salva as alterações
 echo "Salvando alterações..."
 chmod 777 /usr
+chmod 777 /usr/bin
+chmod 777 /usr/lib
 batocera-save-overlay
 
 echo "Instalação concluída com sucesso."
