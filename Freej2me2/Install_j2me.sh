@@ -56,9 +56,9 @@ FILE="/usr/share/batocera/configgen/configgen-defaults.yml"
 #"echo -e "\nj2me:\n  emulator: libretro\n  core:     freej2me" >> $FILE"
 
 # Verifique se as informações já estão no arquivo
-if ! grep -q "j2me:" $FILE; then
+if ! grep -q "j2me:" "$FILE"; then
     # Adicione o conteúdo desejado ao arquivo
-    echo -e "\nj2me:\n  emulator: libretro\n  core:     freej2me" >> $FILE
+    echo -e "\nj2me:\n  emulator: libretro\n  core:     freej2me" >> "$FILE"
     echo "Informações adicionadas ao arquivo."
 else
     echo "As informações já existem no arquivo. Nenhuma alteração foi feita."
@@ -87,7 +87,7 @@ rm -rf $TEMP_DIR
 
 # Salva as alterações
 echo "Salvando alterações..."
-batocera-save-overlay 300
+batocera-save-overlay
 
 # Verifica se o diretório /userdata/system/pro/java existe
 if [ -d "/userdata/system/pro/java" ]; then
