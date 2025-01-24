@@ -70,8 +70,8 @@ chmod 777 /media/SHARE/system/configs/bat-drl/Freej2me/freej2me.sh
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox
 chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox.sh
 chmod 777 $FILE
-chmod 777 /userdata/roms/j2me/Update_j2me.sh
-chmod 777 /userdata/roms/ports/Update_j2me.sh
+chmod 777 /userdata/roms/j2me/-Update_j2me.sh
+chmod 777 /userdata/roms/ports/-Update_j2me.sh
 chmod 777 /usr
 chmod 777 /usr/bin
 
