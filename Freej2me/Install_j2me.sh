@@ -74,7 +74,7 @@ rm -rf $TEMP_DIR
 
 # Check if the /userdata/system/add-ons/java directory exists
 if [ -d "/userdata/system/drl/java" ]; then
-    echo "The directory /userdata/system/add-ons/java already exists. Exiting script."
+    echo "The directory /userdata/system/drl/java already exists. Exiting script."
     exit 0
 fi
 
