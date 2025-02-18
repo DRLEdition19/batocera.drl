@@ -83,7 +83,7 @@ echo "Executing the java.sh script..."
 curl -Ls https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/java/java.sh | bash
 
 echo "Setting permissions for specific files..."
-create_symlink "/userdata/system/drl/java/bin/java" "/usr/bin/java"
+create_symlink "/userdata/system/drl/java/java/bin/java" "/usr/bin/java"
 
 # Save changes
 echo "Saving changes..."
