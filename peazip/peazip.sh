@@ -14,7 +14,7 @@
 #--------------------------------------------------------------------- 
 
 APPNAME=peazip 
-APPLINK=https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/peazip/extra/peazip37.AppImage
+APPLINK=https://github.com/DRLEdition19/batocera.drl/raw/refs/heads/main/peazip/extra/peazip.AppImage
 APPHOME="batocera.pro/app"
 
 APPNAME="${APPNAME^^}"; ORIGIN="${APPHOME^^}"; appname=$(echo "$APPNAME" | awk '{print tolower($0)}'); 
